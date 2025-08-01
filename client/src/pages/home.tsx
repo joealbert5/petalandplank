@@ -418,7 +418,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email Us</h4>
-                    <p className="opacity-90">hello@petalandplank.com</p>
+                    <p className="opacity-90">hello@thepetalandplank.com</p>
                   </div>
                 </div>
                 
@@ -428,7 +428,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Call Us</h4>
-                    <p className="opacity-90">(555) 123-4567</p>
+                    <p className="opacity-90">(707) 687-9285</p>
                   </div>
                 </div>
                 
