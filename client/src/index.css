@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(44, 29%, 96%);
+  --foreground: hsl(0, 0%, 17%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(82, 14%, 42%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Custom colors for Petal & Plank */
+  --sage: hsl(82, 14%, 42%);
+  --warm-taupe: hsl(32, 24%, 50%);
+  --warm-white: hsl(44, 29%, 96%);
+  --cream: hsl(39, 18%, 87%);
+  --terracotta: hsl(16, 51%, 47%);
+  --golden: hsl(35, 45%, 64%);
+  --charcoal: hsl(0, 0%, 17%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(82, 14%, 42%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes */
+.bg-sage {
+  background-color: hsl(82, 14%, 42%);
+}
+
+.bg-warm-taupe {
+  background-color: hsl(32, 24%, 50%);
+}
+
+.bg-warm-white {
+  background-color: hsl(44, 29%, 96%);
+}
+
+.bg-cream {
+  background-color: hsl(39, 18%, 87%);
+}
+
+.bg-terracotta {
+  background-color: hsl(16, 51%, 47%);
+}
+
+.bg-golden {
+  background-color: hsl(35, 45%, 64%);
+}
+
+.bg-charcoal {
+  background-color: hsl(0, 0%, 17%);
+}
+
+.text-sage {
+  color: hsl(82, 14%, 42%);
+}
+
+.text-warm-taupe {
+  color: hsl(32, 24%, 50%);
+}
+
+.text-charcoal {
+  color: hsl(0, 0%, 17%);
+}
+
+.text-terracotta {
+  color: hsl(16, 51%, 47%);
+}
+
+.text-golden {
+  color: hsl(35, 45%, 64%);
+}
+
+.hover\:bg-sage:hover {
+  background-color: hsl(82, 14%, 42%);
+}
+
+.hover\:bg-terracotta:hover {
+  background-color: hsl(16, 51%, 47%);
+}
+
+.hover\:text-sage:hover {
+  color: hsl(82, 14%, 42%);
+}
+
+.focus\:ring-sage:focus {
+  --tw-ring-color: hsl(82, 14%, 42%);
+}
+
+.focus\:ring-terracotta:focus {
+  --tw-ring-color: hsl(16, 51%, 47%);
+}
