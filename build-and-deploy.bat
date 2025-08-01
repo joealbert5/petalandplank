@@ -21,6 +21,7 @@ if not exist "C:\inetpub\wwwroot3" (
 
 REM Copy all files from dist to the IIS directory
 xcopy /E /I /Y "dist\*" "C:\inetpub\wwwroot3\"
+xcopy /E /I /Y "dist\public\*" "C:\inetpub\wwwroot3\"
 
 if %ERRORLEVEL% NEQ 0 (
     echo Failed to copy files to IIS directory!
@@ -32,7 +33,7 @@ echo.
 echo ✓ Build and deployment completed successfully!
 echo ✓ Frontend files copied to C:\inetpub\wwwroot3
 echo.
-echo Your Petal & Plank website is now ready in IIS!
+echo Your Petal and Plank website is now ready in IIS!
 
 npm run start
 pause
